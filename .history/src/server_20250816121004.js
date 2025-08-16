@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 // Rotas de autenticação
 app.use('/api/auth', authRoutes);
 
-// Conectar MongoDB
+// Conectar MMongoDB
 mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log('✅ MongoDB connected');
