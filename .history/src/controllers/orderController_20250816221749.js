@@ -37,7 +37,7 @@ export const createOrder = async (req, res) => {
                 nome: pizza.nome,
                 tamanho: item.tamanho,
                 quantidade: item.quantidade,
-                precoUnitario: preco,
+                preco,
                 subtotal,
             });
         }
